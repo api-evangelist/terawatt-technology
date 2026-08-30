@@ -1,7 +1,17 @@
 aid: terawatt-technology
 name: TeraWatt Technology
-description: 'TeraWatt Technology is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  TeraWatt Technology Inc. is a next-generation lithium-ion battery company founded in 2020 by
+  Ken Ogata (CEO) and Yifan Tang, headquartered in California with an R&D center in Santa Clara
+  and operations in Japan, including its first mass-production facility in Shizuoka. The company
+  develops, manufactures and commercializes lithium-ion cells engineered for ultra-high energy
+  density, high power output, improved safety and competitive cost, aimed at electric vehicles,
+  drones, eVTOL aircraft and grid-scale energy-storage systems. It closed a Series C round with
+  investors including Khosla Ventures, Temasek, JIC Venture Growth Investments, JBIC, JERA and
+  ITOCHU Technology Ventures. TeraWatt Technology is a hardware manufacturer: it publishes no
+  public API, developer portal, machine-readable contract or SDK, which was verified by probing
+  its only public host rather than assumed.
+image: https://cdn.prod.website-files.com/62c28e77ff36a9cee41c7444/62c928f69749a0f46b7f2eb7_web-tab-thumbnail.png
 url: https://raw.githubusercontent.com/api-evangelist/terawatt-technology/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +22,13 @@ created: '2026-08-30'
 modified: '2026-08-30'
 tags:
 - Company
+- Batteries
+- Energy Storage
+- Lithium-Ion
+- Electric Vehicles
+- Manufacturing
+- Clean Energy
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +37,37 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/terawatt-technology_stock/
+  url: https://www.terawatt-technology.com/
+- type: Support
+  url: https://www.terawatt-technology.com/contact-us
+- type: LinkedIn
+  url: https://www.linkedin.com/company/terawatt-technology-inc
+- type: DomainSecurity
+  url: security/terawatt-technology-domain-security.yml
+- type: LLMsTxt
+  url: llms/terawatt-technology-llms.txt
+x-enrichment:
+  date: '2026-08-30'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    TeraWatt Technology manufactures lithium-ion battery cells for EV, eVTOL and grid-storage
+    OEMs; its entire public surface is a four-anchor Webflow marketing site (Vision, News,
+    Careers, Contact) with no developer section, and api./developer./docs.terawatt-technology.com
+    do not resolve in DNS at all.
+  evidence:
+  - url: https://www.terawatt-technology.com/
+    status: 200
+  - url: https://www.terawatt-technology.com/openapi.json
+    status: 404
+  - url: https://www.terawatt-technology.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.terawatt-technology.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.terawatt-technology.com/sitemap.xml
+    status: 404
+  checked: '2026-08-30'

@@ -1,0 +1,33 @@
+generated: '2026-08-30'
+method: probed
+source: live GET probes of /.well-known/* on every host named in apis.yml
+note: >-
+  Every /.well-known/ path probed on the company's only public host returned HTTP 404.
+  The Webflow-hosted marketing site answers /.well-known/* with a generic
+  "Invalid .well-known request" HTML page. No document was served, so NO WellKnown or
+  SecurityTxt pointer is emitted in apis.yml — this file records a verified absence,
+  which is valid data, not a served surface.
+hosts:
+- host: www.terawatt-technology.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

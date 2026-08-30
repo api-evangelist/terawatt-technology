@@ -1,0 +1,16 @@
+generated: '2026-08-30'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.terawatt-technology.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov  9 06:49:00 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+domains:
+- domain: terawatt-technology.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false
