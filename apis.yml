@@ -11,6 +11,18 @@ description: >-
   ITOCHU Technology Ventures. TeraWatt Technology is a hardware manufacturer: it publishes no
   public API, developer portal, machine-readable contract or SDK, which was verified by probing
   its only public host rather than assumed.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://cdn.prod.website-files.com/62c28e77ff36a9cee41c7444/62c928f69749a0f46b7f2eb7_web-tab-thumbnail.png
 url: https://raw.githubusercontent.com/api-evangelist/terawatt-technology/refs/heads/main/apis.yml
 x-type: company
